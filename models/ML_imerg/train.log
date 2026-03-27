@@ -1,0 +1,125 @@
+[2026-03-18 23:41:49,175][__main__][INFO] - experiment working directory: /home/disk/brume/morenor/zephyr
+[2026-03-18 23:41:49,176][__main__][INFO] - experiment working directory: /home/disk/brume/morenor/zephyr
+[2026-03-18 23:41:49,176][__main__][INFO] - experiment working directory: /home/disk/brume/morenor/zephyr
+[2026-03-18 23:41:49,176][__main__][INFO] - experiment working directory: /home/disk/brume/morenor/zephyr
+[2026-03-18 23:41:49,548][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 2
+[2026-03-18 23:41:49,557][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2026-03-18 23:41:50,333][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 3
+[2026-03-18 23:41:50,351][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 0
+[2026-03-18 23:41:50,352][torch.distributed.distributed_c10d][INFO] - Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+[2026-03-18 23:41:50,354][torch.distributed.distributed_c10d][INFO] - Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+[2026-03-18 23:41:50,359][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+[2026-03-18 23:41:50,360][torch.distributed.distributed_c10d][INFO] - Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+[2026-03-18 23:41:51,990][numexpr.utils][INFO] - Note: NumExpr detected 64 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2026-03-18 23:41:51,990][numexpr.utils][INFO] - NumExpr defaulting to 8 threads.
+[2026-03-18 23:41:51,996][numexpr.utils][INFO] - Note: NumExpr detected 64 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2026-03-18 23:41:51,996][numexpr.utils][INFO] - Note: NumExpr detected 64 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2026-03-18 23:41:51,996][numexpr.utils][INFO] - Note: NumExpr detected 64 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2026-03-18 23:41:51,996][numexpr.utils][INFO] - NumExpr defaulting to 8 threads.
+[2026-03-18 23:41:51,996][numexpr.utils][INFO] - NumExpr defaulting to 8 threads.
+[2026-03-18 23:41:51,996][numexpr.utils][INFO] - NumExpr defaulting to 8 threads.
+[2026-03-18 23:41:56,552][training.dlwp.data.data_loading][INFO] - opening input datasets
+[2026-03-18 23:41:56,745][numcodecs][DEBUG] - Registering codec 'zlib'
+[2026-03-18 23:41:56,746][numcodecs][DEBUG] - Registering codec 'gzip'
+[2026-03-18 23:41:56,747][numcodecs][DEBUG] - Registering codec 'bz2'
+[2026-03-18 23:41:56,748][numcodecs][DEBUG] - Registering codec 'lzma'
+[2026-03-18 23:41:56,750][numcodecs][DEBUG] - Registering codec 'blosc'
+[2026-03-18 23:41:56,751][numcodecs][DEBUG] - Registering codec 'zstd'
+[2026-03-18 23:41:56,751][numcodecs][DEBUG] - Registering codec 'lz4'
+[2026-03-18 23:41:56,753][numcodecs][DEBUG] - Registering codec 'astype'
+[2026-03-18 23:41:56,760][numcodecs][DEBUG] - Registering codec 'delta'
+[2026-03-18 23:41:56,761][numcodecs][DEBUG] - Registering codec 'quantize'
+[2026-03-18 23:41:56,761][numcodecs][DEBUG] - Registering codec 'fixedscaleoffset'
+[2026-03-18 23:41:56,762][numcodecs][DEBUG] - Registering codec 'packbits'
+[2026-03-18 23:41:56,763][numcodecs][DEBUG] - Registering codec 'categorize'
+[2026-03-18 23:41:56,764][numcodecs][DEBUG] - Registering codec 'pickle'
+[2026-03-18 23:41:56,765][numcodecs][DEBUG] - Registering codec 'base64'
+[2026-03-18 23:41:56,766][numcodecs][DEBUG] - Registering codec 'shuffle'
+[2026-03-18 23:41:56,766][numcodecs][DEBUG] - Registering codec 'bitround'
+[2026-03-18 23:41:56,803][numcodecs][DEBUG] - Registering codec 'msgpack2'
+[2026-03-18 23:41:56,804][numcodecs][DEBUG] - Registering codec 'crc32'
+[2026-03-18 23:41:56,804][numcodecs][DEBUG] - Registering codec 'adler32'
+[2026-03-18 23:41:56,805][numcodecs][DEBUG] - Registering codec 'json2'
+[2026-03-18 23:41:56,806][numcodecs][DEBUG] - Registering codec 'vlen-utf8'
+[2026-03-18 23:41:56,806][numcodecs][DEBUG] - Registering codec 'vlen-bytes'
+[2026-03-18 23:41:56,806][numcodecs][DEBUG] - Registering codec 'vlen-array'
+[2026-03-18 23:41:56,954][numcodecs][DEBUG] - Registering codec 'n5_wrapper'
+[2026-03-18 23:41:58,782][numcodecs][DEBUG] - Registering codec 'zlib'
+[2026-03-18 23:41:58,782][numcodecs][DEBUG] - Registering codec 'zlib'
+[2026-03-18 23:41:58,782][numcodecs][DEBUG] - Registering codec 'zlib'
+[2026-03-18 23:41:58,783][numcodecs][DEBUG] - Registering codec 'gzip'
+[2026-03-18 23:41:58,783][numcodecs][DEBUG] - Registering codec 'gzip'
+[2026-03-18 23:41:58,783][numcodecs][DEBUG] - Registering codec 'gzip'
+[2026-03-18 23:41:58,783][numcodecs][DEBUG] - Registering codec 'bz2'
+[2026-03-18 23:41:58,783][numcodecs][DEBUG] - Registering codec 'bz2'
+[2026-03-18 23:41:58,783][numcodecs][DEBUG] - Registering codec 'bz2'
+[2026-03-18 23:41:58,784][numcodecs][DEBUG] - Registering codec 'lzma'
+[2026-03-18 23:41:58,784][numcodecs][DEBUG] - Registering codec 'lzma'
+[2026-03-18 23:41:58,784][numcodecs][DEBUG] - Registering codec 'lzma'
+[2026-03-18 23:41:58,785][numcodecs][DEBUG] - Registering codec 'blosc'
+[2026-03-18 23:41:58,785][numcodecs][DEBUG] - Registering codec 'blosc'
+[2026-03-18 23:41:58,785][numcodecs][DEBUG] - Registering codec 'blosc'
+[2026-03-18 23:41:58,786][numcodecs][DEBUG] - Registering codec 'zstd'
+[2026-03-18 23:41:58,786][numcodecs][DEBUG] - Registering codec 'zstd'
+[2026-03-18 23:41:58,786][numcodecs][DEBUG] - Registering codec 'zstd'
+[2026-03-18 23:41:58,786][numcodecs][DEBUG] - Registering codec 'lz4'
+[2026-03-18 23:41:58,786][numcodecs][DEBUG] - Registering codec 'lz4'
+[2026-03-18 23:41:58,786][numcodecs][DEBUG] - Registering codec 'lz4'
+[2026-03-18 23:41:58,787][numcodecs][DEBUG] - Registering codec 'astype'
+[2026-03-18 23:41:58,787][numcodecs][DEBUG] - Registering codec 'astype'
+[2026-03-18 23:41:58,787][numcodecs][DEBUG] - Registering codec 'astype'
+[2026-03-18 23:41:58,787][numcodecs][DEBUG] - Registering codec 'delta'
+[2026-03-18 23:41:58,788][numcodecs][DEBUG] - Registering codec 'delta'
+[2026-03-18 23:41:58,788][numcodecs][DEBUG] - Registering codec 'delta'
+[2026-03-18 23:41:58,788][numcodecs][DEBUG] - Registering codec 'quantize'
+[2026-03-18 23:41:58,788][numcodecs][DEBUG] - Registering codec 'quantize'
+[2026-03-18 23:41:58,788][numcodecs][DEBUG] - Registering codec 'quantize'
+[2026-03-18 23:41:58,788][numcodecs][DEBUG] - Registering codec 'fixedscaleoffset'
+[2026-03-18 23:41:58,789][numcodecs][DEBUG] - Registering codec 'fixedscaleoffset'
+[2026-03-18 23:41:58,789][numcodecs][DEBUG] - Registering codec 'fixedscaleoffset'
+[2026-03-18 23:41:58,789][numcodecs][DEBUG] - Registering codec 'packbits'
+[2026-03-18 23:41:58,789][numcodecs][DEBUG] - Registering codec 'packbits'
+[2026-03-18 23:41:58,789][numcodecs][DEBUG] - Registering codec 'packbits'
+[2026-03-18 23:41:58,789][numcodecs][DEBUG] - Registering codec 'categorize'
+[2026-03-18 23:41:58,790][numcodecs][DEBUG] - Registering codec 'categorize'
+[2026-03-18 23:41:58,790][numcodecs][DEBUG] - Registering codec 'categorize'
+[2026-03-18 23:41:58,790][numcodecs][DEBUG] - Registering codec 'pickle'
+[2026-03-18 23:41:58,790][numcodecs][DEBUG] - Registering codec 'pickle'
+[2026-03-18 23:41:58,790][numcodecs][DEBUG] - Registering codec 'pickle'
+[2026-03-18 23:41:58,791][numcodecs][DEBUG] - Registering codec 'base64'
+[2026-03-18 23:41:58,791][numcodecs][DEBUG] - Registering codec 'base64'
+[2026-03-18 23:41:58,791][numcodecs][DEBUG] - Registering codec 'base64'
+[2026-03-18 23:41:58,791][numcodecs][DEBUG] - Registering codec 'shuffle'
+[2026-03-18 23:41:58,791][numcodecs][DEBUG] - Registering codec 'shuffle'
+[2026-03-18 23:41:58,791][numcodecs][DEBUG] - Registering codec 'shuffle'
+[2026-03-18 23:41:58,792][numcodecs][DEBUG] - Registering codec 'bitround'
+[2026-03-18 23:41:58,792][numcodecs][DEBUG] - Registering codec 'bitround'
+[2026-03-18 23:41:58,792][numcodecs][DEBUG] - Registering codec 'bitround'
+[2026-03-18 23:41:58,795][numcodecs][DEBUG] - Registering codec 'msgpack2'
+[2026-03-18 23:41:58,795][numcodecs][DEBUG] - Registering codec 'msgpack2'
+[2026-03-18 23:41:58,795][numcodecs][DEBUG] - Registering codec 'msgpack2'
+[2026-03-18 23:41:58,796][numcodecs][DEBUG] - Registering codec 'crc32'
+[2026-03-18 23:41:58,796][numcodecs][DEBUG] - Registering codec 'adler32'
+[2026-03-18 23:41:58,796][numcodecs][DEBUG] - Registering codec 'crc32'
+[2026-03-18 23:41:58,796][numcodecs][DEBUG] - Registering codec 'adler32'
+[2026-03-18 23:41:58,796][numcodecs][DEBUG] - Registering codec 'crc32'
+[2026-03-18 23:41:58,796][numcodecs][DEBUG] - Registering codec 'adler32'
+[2026-03-18 23:41:58,796][numcodecs][DEBUG] - Registering codec 'json2'
+[2026-03-18 23:41:58,796][numcodecs][DEBUG] - Registering codec 'json2'
+[2026-03-18 23:41:58,796][numcodecs][DEBUG] - Registering codec 'json2'
+[2026-03-18 23:41:58,797][numcodecs][DEBUG] - Registering codec 'vlen-utf8'
+[2026-03-18 23:41:58,797][numcodecs][DEBUG] - Registering codec 'vlen-bytes'
+[2026-03-18 23:41:58,797][numcodecs][DEBUG] - Registering codec 'vlen-array'
+[2026-03-18 23:41:58,797][numcodecs][DEBUG] - Registering codec 'vlen-utf8'
+[2026-03-18 23:41:58,797][numcodecs][DEBUG] - Registering codec 'vlen-bytes'
+[2026-03-18 23:41:58,797][numcodecs][DEBUG] - Registering codec 'vlen-array'
+[2026-03-18 23:41:58,797][numcodecs][DEBUG] - Registering codec 'vlen-utf8'
+[2026-03-18 23:41:58,797][numcodecs][DEBUG] - Registering codec 'vlen-bytes'
+[2026-03-18 23:41:58,797][numcodecs][DEBUG] - Registering codec 'vlen-array'
+[2026-03-18 23:41:58,811][numcodecs][DEBUG] - Registering codec 'n5_wrapper'
+[2026-03-18 23:41:58,811][numcodecs][DEBUG] - Registering codec 'n5_wrapper'
+[2026-03-18 23:41:58,812][numcodecs][DEBUG] - Registering codec 'n5_wrapper'
+[2026-03-18 23:42:18,888][torch.nn.parallel.distributed][INFO] - Reducer buckets have been rebuilt in this iteration.
+[2026-03-18 23:42:18,888][torch.nn.parallel.distributed][INFO] - Reducer buckets have been rebuilt in this iteration.
+[2026-03-18 23:42:18,888][torch.nn.parallel.distributed][INFO] - Reducer buckets have been rebuilt in this iteration.
+[2026-03-18 23:42:18,888][torch.nn.parallel.distributed][INFO] - Reducer buckets have been rebuilt in this iteration.

@@ -1,0 +1,39 @@
+defaults:
+  - module: time_series
+  - scaling: ML_imerg_scaling
+  - splits: ML_imerg_splits
+
+src_directory: null
+dst_directory: /home/disk/brume/morenor/data/
+dataset_name: EI_2022_tp3_hpx64_13var_in-meters_log_timeshift_corrected
+prefix: 
+suffix: ''
+data_format: classic
+input_variables:
+  - z500
+  - tau300-700
+  - z1000
+  - t2m0
+  - tcwv0
+  - t850
+  - z250
+  - olr
+  - ws10
+  - sst
+  - u850
+  - v850
+  - q850
+output_variables:
+  - tp3
+constants:
+  land_sea_mask: lsm
+  topography: z
+input_time_dim: 2
+output_time_dim: 1
+data_time_step: 3H
+time_step: 3H
+gap: 0
+add_insolation: true
+nside: 64
+cube_dim: ${data.nside}
+prebuilt_dataset: true

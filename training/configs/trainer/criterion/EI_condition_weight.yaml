@@ -1,0 +1,3 @@
+_target_: training.dlwp.trainer.criterion.ConditionalWeightLoss
+b: 1.6
+w: 1 #1e-3
