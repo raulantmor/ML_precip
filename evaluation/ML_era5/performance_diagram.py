@@ -105,7 +105,7 @@ def plot_performance_diagram_pretty(hits, misses, false_alarms,
     ax.legend(loc='lower left', fontsize=10)
     plt.tight_layout()
     #plt.title()
-    plt.savefig('fig3c.png')
+    plt.savefig('fig4c.png')
     plt.close()
 
 def main(mle_path, era_path):

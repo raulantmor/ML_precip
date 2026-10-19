@@ -52,7 +52,7 @@ def plot_fss(mle, era, mle_d, era_d):
     ax.legend(loc=(0.7, 0.21), frameon=True)
     ax.grid()
 
-    plt.savefig('fig4a.png')
+    plt.savefig('fig5a.png')
     
 def plot_ets(mle, era, mle_d, era_d):
     bins = [0.05, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 10]
@@ -90,7 +90,7 @@ def plot_ets(mle, era, mle_d, era_d):
     ax1.legend(lines1 + lines2, labels1 + labels2, loc='upper right')
 
     plt.tight_layout()
-    plt.savefig('fig4b.png')
+    plt.savefig('fig5b.png')
     plt.close()
 
 def plot_seeps(mle_d, era_d, P, threshold):
@@ -110,7 +110,7 @@ def plot_seeps(mle_d, era_d, P, threshold):
     plt.ylabel('1-SEEPS')
     plt.grid()
     plt.legend()
-    plt.savefig('fig4c.png')
+    plt.savefig('fig5c.png')
     plt.close()
     
 def main(mle_path, era_path, P_path, thresh_path):

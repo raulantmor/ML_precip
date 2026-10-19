@@ -1,4 +1,4 @@
-experiment_name: EE-tp3_hpx64_13var_in-meters_standardized_10exp20
+experiment_name: EE-tp3_hpx64_13var_uvq850_15exp19_new-w
 output_dir: /home/disk/brume/morenor/zephyr/outputs2/${experiment_name}
 checkpoint_name: null
 load_weights_only: false
@@ -6,7 +6,7 @@ seed: 2
 batch_size: 32
 learning_rate: 0.001
 num_workers: 1
-port: 11232
+port: 11233
 master_address: localhost
 data:
   module:
@@ -213,7 +213,7 @@ model:
 trainer:
   criterion:
     _target_: training.dlwp.trainer.criterion.ConditionalWeightLoss
-    b: 2
+    b: 1.9
     w: 1
   optimizer:
     _target_: torch.optim.Adam

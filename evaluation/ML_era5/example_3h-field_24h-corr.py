@@ -62,7 +62,7 @@ def make_precip_figure(mle, era):
     cbar.ax.set_yticklabels(log_scale_values)
     plt.subplots_adjust(wspace=0.05, right=0.77)
 
-    plt.savefig('fig3ab.png')
+    plt.savefig('fig4ab.png')
     plt.close()
     
 
@@ -97,7 +97,7 @@ def make_corr_figure(mle_d, era_d):
     cbar = plt.colorbar(fills, ax=ax, orientation='vertical', pad=0.02, shrink=0.7)
     cbar.set_label('Correlation')
 
-    plt.savefig('fig3d.png')
+    plt.savefig('fig4d.png')
     plt.close()
 
 def main(mle_path, era_path):
