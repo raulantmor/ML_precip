@@ -27,7 +27,7 @@ To run ML$_{\rm IMERG}$ or ML$_{\rm ERA5}$, you must first set up the environmen
     
 3.  Compile the data:
 
-    All data used in this work is publicly available through the Climate Copernicus Data Store for ERA5, NASA’s EarthData for IMERG, and through NOAA for Stage IV. Data should then be remapped to the HEALPix64 grid used for training and running the diagnostic models. An example script to use for remapping data can be found at:
+    All data used in this work is publicly available through the Climate Copernicus Data Store for ERA5, NASA’s EarthData for IMERG, and through NOAA for Stage IV. Data should be downloaded at 3-hourly temporal resolution and quarter degree spatial resolution. Precipitation data should be summed to 3-hour accumulations, with the time label indicating the ending time of the period of accumulation (the value at 03:00 should correspond to the precipitation accumulated between 00:00 and 03:00.) Data should then be remapped to the HEALPix64 grid used for training and running the diagnostic models. An example script to use for remapping data can be found at:
     ```sh
     /scripts/map2hpx.py
     ```
