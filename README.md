@@ -6,7 +6,7 @@ Moreno and Durran, "Do Climate Models Need Microphysical and Convective Paramete
 
 ## Overview
 
-To run ML_IMERG or ML_ERA5, you must first set up the environment, clone the repository, and obtain all necessary input data.
+To run ML<sub>IMERG</sub> or ML<sub>ERA5</sub>, you must first set up the environment, clone the repository, and obtain all necessary input data.
     
 1.  Environment:
 
@@ -32,7 +32,7 @@ To run ML_IMERG or ML_ERA5, you must first set up the environment, clone the rep
     /scripts/map2hpx.py
     ```
     
-## Running ML$_{\rm IMERG}$ and ML$_{\rm ERA5}$
+## Running ML<sub>IMERG</sub> and ML<sub>ERA5</sub>
 
 The analysis presented in this work spanned the period between 2022 and the end of 2024. To reporduce these simulations, follow these steps:
 
