@@ -5,7 +5,7 @@ defaults:
   - trainer: default_pd
 
 experiment_name: ${now:%Y-%m-%d}/${now:%H-%M-%S}
-output_dir: /home/disk/brume/morenor/zephyr/outputs2/${experiment_name}
+output_dir: /home/disk/brume/morenor/ML_precip/outputs/${experiment_name}
 checkpoint_name: null
 load_weights_only: false
 seed: 0

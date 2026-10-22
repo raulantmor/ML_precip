@@ -7,9 +7,9 @@ defaults:
 _target_: training.dlwp.model.models.unet.UNetDecoder
 _recursive_: false
 n_channels:
-  - 256
-  - 128
-  - 64
+  - 90
+  - 90
+  - 180
 n_layers:
   - 1
   - 1

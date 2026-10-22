@@ -6,13 +6,14 @@ from scipy.signal import convolve2d
 def get_FSS(data, truth, thresholds, n):
     """
     Computes Fraction Skill Score (FSS) for data in format (time,lat,lon).
-    Returns array of FSS scores with length=Nt.
+    Returns average FSS by threshold as well as the baselines FSS_random
+    and FSS_uniform.
     
     Parameters:
     - data: model output to be evaluated (time, lat, lon)
     - truth: verification data (time, lat, lon)
     - thresholds: array of threshold values for binning
-    - n: size of box for fractions
+    - n: size of box for neighborhood fractions
     """
     Nt = len(data)
     FSS = np.empty((Nt, len(thresholds) - 1))
@@ -72,8 +73,8 @@ def compute_ets(model_precip, truth_precip, threshold):
     Compute Equitable Threat Score (ETS) for a given precipitation threshold.
     
     Parameters:
-    - model_precip: xarray.DataArray (time, lat, lon) - Model precipitation predictions
-    - truth_precip: xarray.DataArray (time, lat, lon) - Observed precipitation (ground truth)
+    - model_precip: model output to be evaluated (time, lat, lon)
+    - truth_precip: verification data (time, lat, lon)
     - threshold: float - Precipitation threshold to evaluate
     
     Returns:
@@ -100,7 +101,11 @@ def compute_ets(model_precip, truth_precip, threshold):
         return ets
     
 def assign_seeps_category(precip, threshold_LH):
-    """Categorize precipitation based on SEEPS definitions."""
+    """
+    
+    Categorize precipitation based on SEEPS definitions.
+    Data must be daily accumulations.
+    """
     category = np.zeros_like(precip, dtype=int)
     category = np.where(precip > 0.20, 1, 0)
     category = np.where(precip > threshold_LH, 2, category)
@@ -112,14 +117,13 @@ def compute_seeps_score_with_contributions(forecast, observation, threshold_LH, 
 
     time, lat, lon = observation.shape
 
-    # Compute SEEPS penalty matrix: shape (3, 3, lat, lon)
+    # SEEPS penalty matrix
     se_matrix = 0.5 * np.stack([
         [0 * P,           1 / (1 - P),         4 / (1 - P)],
         [1 / P,           0 * P,               3 / (1 - P)],
         [(1 / P) + (3 / (2 + P)), 3 / (2 + P),   0 * P]
     ], axis=0)
 
-    # Score and contribution counts
     seeps_score = np.empty((time, lat, lon))
     contrib_counts = np.zeros((time, 3, 3), dtype=int)
     contrib_values = np.zeros((time, 3, 3))
@@ -127,7 +131,6 @@ def compute_seeps_score_with_contributions(forecast, observation, threshold_LH, 
         o = obs_cat[t]
         f = fcst_cat[t]
 
-        # Contribution counter
         for i in range(3):
             for j in range(3):
                 contrib_counts[t, i, j] += np.sum((o == i) & (f == j))
@@ -135,7 +138,7 @@ def compute_seeps_score_with_contributions(forecast, observation, threshold_LH, 
         seeps_score[t] = se_matrix[o, f, np.arange(lat)[:, None], np.arange(lon)]
         seeps_score[t] = np.minimum(seeps_score[t], 1)
 
-        # Also compute total contribution (optional):
+        # compute total contribution
         for i in range(3):
             for j in range(3):
                 contrib_values[t, i, j] = contrib_counts[t, i, j] * np.mean(se_matrix[i, j])

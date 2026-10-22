@@ -21,7 +21,7 @@ from training.dlwp.utils import write_checkpoint
 
 class Trainer():
     """
-    A class for DLWP model training
+    A class for DLWP model training (adapted for a precipitation diagnostic model.)
     """
 
     def __init__(
