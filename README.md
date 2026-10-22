@@ -1,4 +1,5 @@
 # A Deep Learning Precipitation Diagnostic Model
+[![DOI](https://zenodo.org/badge/1194087222.svg)](https://doi.org/10.5281/zenodo.23551157)
 
 Code, model configurations, and trained checkpoints accompanying:
 
