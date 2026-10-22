@@ -2,7 +2,7 @@
 
 Code, model configurations, and trained checkpoints accompanying:
 
-Moreno and Durran, "Do Climate Models Need Microphysical and Convective Parameterizations to Generate Accurate Precipitation Fields?," Artificial Intelligence for the Earth Systems (2026). DOI:
+Moreno and Durran, "Do Climate Models Need Microphysical and Convective Parameterizations to Generate Accurate Precipitation Fields?," Artificial Intelligence for the Earth Systems (2026).
 
 ## Overview
 
