@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "ML_precip"
+abstract: "Code for the models and evaluation scripts accompanying 'Do Climate Models Need Microphysical and Convective Parameterizations to Generate Accurate Precipitation Fields?' (AIES, submitted)."
+type: software
+authors:
+  - family-names: "Moreno"
+    given-names: "Raul"
+    orcid: "https://orcid.org/0009-0005-6153-0106"
+    affiliation: "University of Washington, Department of Atmospheric and Climate Science"
+  - family-names: "Durran"
+    given-names: "Dale"
+    orcid: "https://orcid.org/0000-0002-6390-2584"
+    affiliation: "University of Washington, Department of Atmospheric and Climate Science"
+repository-code: "https://github.com/raulantmor/ML_precip"
+license: MIT
+version: "1.0.0"
+date-released: "2026-10-21"
+keywords:
+  - machine learning
+  - deep learning
+  - your topic keywords
+preferred-citation:
+  type: article
+  title: "Do Climate Models Need Microphysical and Convective Parameterizations to Generate Accurate Precipitation Fields?"
+  authors:
+    - family-names: "Moreno"
+      given-names: "Raul"
+    - family-names: "Durran"
+      given-names: "Dale"
+  journal: "Artificial Intelligence for the Earth Systems"
+  year: 2026
+  status: "in-review"
